@@ -14,8 +14,8 @@ RUN apt-get update && \
     apt-get install -y cloudflare-warp && \
     apt-get clean && \
     apt-get autoremove -y && \
-    curl -LO https://github.com/ginuerzh/gost/releases/download/v${GOST_VERSION}/gost-linux-amd64-${GOST_VERSION}.gz && \
-    gunzip gost-linux-amd64-${GOST_VERSION}.gz && \
+    curl -LO https://github.com/ginuerzh/gost/releases/download/v${GOST_VERSION}/gost-linux-arm64-${GOST_VERSION}.gz && \
+    gunzip gost-linux-arm64-${GOST_VERSION}.gz && \
     mv gost-linux-amd64-${GOST_VERSION} /usr/bin/gost && \
     chmod +x /usr/bin/gost && \
     chmod +x /entrypoint.sh && \
